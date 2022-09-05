@@ -1,0 +1,39 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Versión sin prefijo, actualmente
+                                      compatible con Chrome y Opera */
+}
+
+
+
+.numeros {
+  animation-name: numerosAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  display: none;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: initial;
+  background-color: brown;
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes numerosAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  20%,80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);}
+}
